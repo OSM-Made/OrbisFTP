@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.1433
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OrbisFTP", "OrbisFTP\OrbisFTP.vcxproj", "{ED36B033-6977-457C-8675-83B132EE11E3}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OrbisFTP.Installer", "OrbisFTP.Installer\OrbisFTP.Installer.vcxproj", "{E1FCF6F3-65C1-431B-AB34-020CBD84025A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -15,6 +17,10 @@ Global
 		{ED36B033-6977-457C-8675-83B132EE11E3}.Debug|x64.Build.0 = Debug|x64
 		{ED36B033-6977-457C-8675-83B132EE11E3}.Release|x64.ActiveCfg = Release|x64
 		{ED36B033-6977-457C-8675-83B132EE11E3}.Release|x64.Build.0 = Release|x64
+		{E1FCF6F3-65C1-431B-AB34-020CBD84025A}.Debug|x64.ActiveCfg = Debug|x64
+		{E1FCF6F3-65C1-431B-AB34-020CBD84025A}.Debug|x64.Build.0 = Debug|x64
+		{E1FCF6F3-65C1-431B-AB34-020CBD84025A}.Release|x64.ActiveCfg = Release|x64
+		{E1FCF6F3-65C1-431B-AB34-020CBD84025A}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

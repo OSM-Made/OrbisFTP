@@ -1,7 +1,7 @@
 SETLOCAL EnableDelayedExpansion
 
 Rem Libraries to link in
-set libraries=-lc -lkernel
+set libraries=-lc -lSceSysModule -lkernel -lc++ -lSceVideoOut -lSceSystemService -lSceSysCore -lSceSystemStateMgr -lSceNet -lSceNetCtl -lScePad -lSceUserService 
 
 Rem Read the script arguments into local vars
 set intdir=%1
@@ -24,8 +24,8 @@ Rem Link the input ELF
 ld.lld -m elf_x86_64 -pie --script "%OO_PS4_TOOLCHAIN%\link.x" --eh-frame-hdr -o "%outputElf%" "-L%OO_PS4_TOOLCHAIN%\\lib" %libraries% --verbose "%OO_PS4_TOOLCHAIN%\lib\crt1.o" %obj_files%
 
 Rem Create the eboot
-%OO_PS4_TOOLCHAIN%\bin\windows\create-eboot.exe -in "%outputElf%" --out "%outputOelf%" --paid 0x3800000000000011
+%OO_PS4_TOOLCHAIN%\bin\windows\create-eboot.exe -in "%outputElf%" --out "%outputOelf%" --paid 0x3800000000000010
 
 Rem Cleanup
-copy "eboot.bin" %outputPath%\eboot.bin
+copy "eboot.bin" %outputPath%\pkg\OFTP00001\eboot.bin
 del "eboot.bin"

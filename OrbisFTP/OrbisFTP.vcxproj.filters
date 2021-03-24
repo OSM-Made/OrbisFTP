@@ -13,11 +13,34 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\FTP">
+      <UniqueIdentifier>{2c2992cf-f6be-4e60-9899-9ab32142663c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\FTP">
+      <UniqueIdentifier>{60262e61-6c9d-40be-bad4-01dc4259f2ff}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="build.bat" />
+    <ClCompile Include="Utilities.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FTPS4.cpp">
+      <Filter>Source Files\FTP</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FTPS4.h">
+      <Filter>Header Files\FTP</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
